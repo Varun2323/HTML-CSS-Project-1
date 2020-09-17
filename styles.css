@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+nav, header, footer {
+    display: block;
+}
+
+.yt-logo {
+    width: 20%;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+.navigation-icon {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: center;
+}
+
+.searchbox-size {
+    width: 45%;
+
+}
+
+.searchbox-pad {
+    padding-right: 0px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .video-icon, .apps-icon, .user-icon, .bell-icon {
+    margin-left: 50px;
+  }
+
+  .video-icon, .apps-icon, .user-icon, .bell-icon, .yt-logo, button {
+      cursor: pointer;
+  }
+  
