@@ -2,45 +2,60 @@ body {
     margin: 0;
 }
 
-nav, header, footer {
-    display: block;
-}
-
-.yt-logo {
-    width: 20%;
-}
-
 nav {
+  display: block;
     width: 100%;
-    margin: 0;
+    margin-left: 20px;
+    margin-top: 30px;
 }
+
+.img-youtube-logo  {
+  width :80px;
+  height :90px;
+  
+}
+
+.img-logo {
+  width: 40px;
+  height: 40px;
+}
+
+
+img-youtube-logo {
+  height: 50px;
+  width:50px;
+} 
 
 .navigation-icon {
     display: flex;
-    flex-direction: row;
-    -ms-flex-align: center;
+    flex-direction: row;  
 }
 
 .searchbox-size {
     width: 45%;
-
+    margin-left: 20px;
 }
 
 .searchbox-pad {
     padding-right: 0px;
 }
 
+
 * {
     box-sizing: border-box;
   }
+
 
 form.example input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     float: left;
     width: 80%;
     background: #f1f1f1;
+    
   }
 
   form.example button {
@@ -51,8 +66,11 @@ form.example input[type=text] {
     color: white;
     font-size: 17px;
     border: 1px solid grey;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
+  
   }
   
   form.example button:hover {
@@ -66,11 +84,65 @@ form.example input[type=text] {
     display: table;
   }
 
-  .video-icon, .apps-icon, .user-icon, .bell-icon {
-    margin-left: 50px;
+  .video-icon {
+    margin-left: 300px;
+  }
+  .apps-icon{
+    margin-left :20px;
+  }
+  .user-icon {
+    margin-left :20px;
+  }
+  .bell-icon {
+    margin-left :20px;
   }
 
   .video-icon, .apps-icon, .user-icon, .bell-icon, .yt-logo, button {
       cursor: pointer;
   }
+  
+  .container {
+    display:flex;
+    
+  }
+  
+  .yt-video-left{
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .container .yt-videos-picture {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    
+    /* width : 200px; */
+  }
+  
+
+  .yt-videos-picture img {
+    margin-bottom: 20px;
+    height: 100px;
+    width : 150px;
+  }
+
+  .container .yt-video-left .container-1 {
+    display : flex;
+  }
+
+  .thumb-up{
+    margin-top: 10px;
+    margin-left: 300px;
+  }
+  .thumb-down{
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .share{
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
   
