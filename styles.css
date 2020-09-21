@@ -137,17 +137,62 @@ form.example input[type=text] {
     align-items: flex-start;
   }
 
-  .yt-videos-picture {
+  /* -------- Right side, suggested videos -------- */
+  
+  .suggestedVids-section {
     display: flex;
     flex-direction: column;
-    width: 10%;
-    align-content: flex-start;
-    margin-right: 250px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    padding: 0px 13px;
+    background-color: white;
   }
-
+  
+  .upNext-cont {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .upNext-cont h5 {
+    font-size: 12px;
+  }
+  
   .toggle-cont {
     display: flex;
+    margin-left: 180px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: darkslategrey;
   }
+  
+  .toggle-cont span {
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #0b7dda;
+  }
+  
+  .suggest-videos-1 {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .suggest-videos {
+    display: flex;
+    margin-bottom: 12px;
+  }
+  
+  .suggestVid-descrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-self: self-start;
+    margin-left: 10px;
+    margin-bottom: 30px;
+  }
+  
 
   
 
