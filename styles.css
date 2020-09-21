@@ -11,6 +11,7 @@ body {
     color: rgb(0, 0, 0);
 }
 
+<<<<<<< HEAD
 .main-cont {
   display: flex;
   flex-flow: column wrap;
@@ -43,6 +44,32 @@ body {
   margin-top: 12px;
   margin-right: 20px;
   padding: 0;
+=======
+nav {
+  display: block;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.img-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.navigation-icon {
+    display: flex;
+    flex-direction: row;  
+}
+
+.img-youtube-logo {
+  width:50px;
+  height:50px;
+
+}
+.searchbox-size {
+    width: 45%;
+    margin-left: 90px;
+>>>>>>> 15b5c6df3bb30610cfd2842f717f08b2e39d4c19
 }
 
 .icons-cont {
@@ -87,11 +114,15 @@ form.search-btn input {
   }
 
   .video-icon {
+<<<<<<< HEAD
     width: auto;
     height: auto;
     max-width: 20px;
     max-height:20px;
     margin-right: 15px;
+=======
+    margin-left: 250px;
+>>>>>>> 15b5c6df3bb30610cfd2842f717f08b2e39d4c19
   }
 
   .apps-icon{
@@ -140,7 +171,12 @@ form.search-btn input {
     max-height: 100%;
   }
   
+<<<<<<< HEAD
   .videoDescrip-section {
+=======
+  .yt-video-left{
+    /* flex-grow: 3; */
+>>>>>>> 15b5c6df3bb30610cfd2842f717f08b2e39d4c19
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -153,6 +189,7 @@ form.search-btn input {
   .video-font {
     padding: 0;
   }
+<<<<<<< HEAD
   
   .subscribers-section {
     display: flex;
@@ -264,6 +301,21 @@ form.search-btn input {
   
   .upNext-cont h5 {
     font-size: 12px;
+=======
+  
+  .yt-videos-picture  {
+    display: flex;
+flex-direction: column;
+    margin-bottom: 20px;
+    height: 100px;
+    /* width : 150px; */
+    margin-left: 50px;
+  }
+
+  .thumb-up{
+    margin-top: 10px;
+    margin-left: 780px;
+>>>>>>> 15b5c6df3bb30610cfd2842f717f08b2e39d4c19
   }
   
   .toggle-cont {
@@ -306,4 +358,41 @@ form.search-btn input {
   
 
 
+  .profile-img {
+height:40px;
+  }
+  .subscribe-btn {
+    background-color: red;
+    opacity: 0.9;
+    border-radius: 5px;
+  }
+
   
+  .subscribe {
+    display: inline-flex;
+  }
+
+  .viewer {
+    margin-left: 650px;
+  }
+  .paragraph {
+    flex-wrap: wrap;
+    width:900px
+  }
+
+  .img-class {
+    width: 150px;
+    height: 120px;
+  }
+
+  .side-pic {
+    display:flex;
+  }
+
+   .para {
+    margin-left: 10px;
+  }
+  .side-row {
+    display: flex;
+    flex-direction: column;
+  }
