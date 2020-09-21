@@ -23,6 +23,14 @@ body {
   background-color: white;
 }
 
+.options-icon {
+  height: auto;
+  width: auto;
+  max-height: 10px;
+  max-width: 10px;
+  margin-top: 7px;
+}
+
 .logo-cont {
   display:flex;
   padding: 0;
@@ -54,7 +62,7 @@ body {
   margin-left: 40px;
 }
 
-form.example input[type=text] {
+form.search-btn input {
     font-size: 17px;
     border: 1px solid grey;
     float: left;
@@ -62,10 +70,10 @@ form.example input[type=text] {
     height: 30px;
     background: #f1f1f1;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
-  form.example button {
+  form.search-btn button {
     width: 50px;
     height: 30px;
     background: #2196F3;
@@ -74,19 +82,8 @@ form.example input[type=text] {
     border: 1px solid grey;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-left: none; /*Prevent double borders */
-    margin: 0;
-  }
-
-  form.example button:hover {
-    background: #0b7dda;
-  }
-  
-  /* Clear floats */
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
+    border-left: none; 
+    margin-top: 10px;
   }
 
   .video-icon {
@@ -105,13 +102,6 @@ form.example input[type=text] {
     margin-right: 13px;
   }
 
-  .user-icon {
-    width: auto;
-    height: auto;
-    max-width: 17px;
-    max-height: 17px;
-  }
-
   .bell-icon {
     width: auto;
     height: auto;
@@ -120,37 +110,137 @@ form.example input[type=text] {
     margin-right: 13px;
   }
 
+  .user-icon {
+    width: auto;
+    height: auto;
+    max-width: 17px;
+    max-height: 17px;
+  }
+
   /* --------- Main view side: video, description and suggested videos --------- */
   .mainview-cont {
-    display:flex;
+    display: flex;
     align-items: flex-start;
-    padding-top: 15px;
+    padding-top: 10px;
   }
   
   .left-section{
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
-    width: 70%;
+    margin-top: 20px;
+    margin-left: 60px;
+    flex-basis: 60%;
+    width: 50%;
   }
 
-  hr {
-    width: 100%;
+  iframe {
+    width: auto;
+    height: 350px;
+    max-width: 100%;
+    max-height: 100%;
   }
-
+  
+  .videoDescrip-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    background-color: white;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .video-font {
+    padding: 0;
+  }
+  
   .subscribers-section {
     display: flex;
-
   }
-
-  .subs-btn-num {
-    display: flex;
-  }
-
+  
   .avatar-cont {
     flex-direction: row;
     display: flex;
     align-items: flex-start;
+    font-size: 16px;
+    margin-top: -30px;
+  }
+  
+  .avatar-cont img {
+    margin-top: 15px;
+    height: 80px;
+  }
+  
+  .subs-btn {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    margin-left: 10px;
+  }
+  
+  .subs-btn a {
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 20px;
+    font-stretch: ultra-condensed;
+    padding: 0;
+    margin-top: -20px;
+  }
+  
+  .subs-btn button {
+    background-color: red;
+    color: white;
+    border-style: none;
+    padding: 8px 2px;
+    border-radius: 5px;
+    margin-top: -7px;
+  }
+  
+  .subscribers-section span {
+    margin-left: 343px;
+    margin-top: 50px;
+    color: grey;
+  }
+  
+  .hr-descripSection {
+    width: 95%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background: #999;
+    margin: 15px 0;
+  } 
+  
+  .shareLike-section {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .shareLike-section button {
+    border-style: none;
+    color: grey;
+  }
+  
+  .shareLike-section i {
+    color: grey;
+    margin-left: 10px;
+  }
+  
+  .thumbs-icons {
+    display: flex;
+    margin-left:480px;
+    justify-content: space-around;
+  }
+  
+  .video-description {
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 13px;
+  }
+  
+  .video-description h5 {
+    font-size: 14px;
   }
 
   /* -------- Right side, suggested videos -------- */
@@ -209,7 +299,7 @@ form.example input[type=text] {
     margin-bottom: 30px;
   }
   
-  .video-icon, .apps-icon, .user-icon, .bell-icon, .yt-logo, button, .suggest-videos {
+  .video-icon, .apps-icon, .user-icon, .bell-icon, .yt-logo, button, .share, .suggest-videos-1, .suggest-videos {
     cursor: pointer;
 }
 

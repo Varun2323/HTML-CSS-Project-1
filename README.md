@@ -32,8 +32,6 @@
  
 ---You can download the code or clone the repository to your local system---
 
-Tests:
-Linters...
 
 Authors:
 - Varun Sharma
