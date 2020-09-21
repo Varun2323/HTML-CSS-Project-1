@@ -55,28 +55,27 @@ body {
 }
 
 form.example input[type=text] {
-    padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
     float: left;
-    width: 80%;
+    width: 470px;
+    height: 30px;
     background: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
   }
 
   form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
+    width: 50px;
+    height: 30px;
     background: #2196F3;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
+    border-left: none; /*Prevent double borders */
+    margin: 0;
   }
 
   form.example button:hover {
@@ -91,25 +90,41 @@ form.example input[type=text] {
   }
 
   .video-icon {
-    margin-left: 300px;
-  }
-  .apps-icon{
-    margin-left :20px;
-  }
-  .user-icon {
-    margin-left :20px;
-  }
-  .bell-icon {
-    margin-left :20px;
+    width: auto;
+    height: auto;
+    max-width: 20px;
+    max-height:20px;
+    margin-right: 15px;
   }
 
-  .video-icon, .apps-icon, .user-icon, .bell-icon, .yt-logo, button {
-      cursor: pointer;
+  .apps-icon{
+    width: auto;
+    height: auto;
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 13px;
   }
-  
+
+  .user-icon {
+    width: auto;
+    height: auto;
+    max-width: 17px;
+    max-height: 17px;
+  }
+
+  .bell-icon {
+    width: auto;
+    height: auto;
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: 13px;
+  }
+
+  /* --------- Main view side: video, description and suggested videos --------- */
   .mainview-cont {
     display:flex;
     align-items: flex-start;
+    padding-top: 15px;
   }
   
   .left-section{
@@ -194,6 +209,9 @@ form.example input[type=text] {
     margin-bottom: 30px;
   }
   
+  .video-icon, .apps-icon, .user-icon, .bell-icon, .yt-logo, button, .suggest-videos {
+    cursor: pointer;
+}
 
   
 
