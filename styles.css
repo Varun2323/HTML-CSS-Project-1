@@ -1,50 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    font-family: 'Youtube Noto', serif, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
 }
 
-nav {
-  display: block;
-    width: 100%;
-    margin-left: 20px;
-    margin-top: 30px;
+.main-cont {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 10px;
 }
 
-.img-youtube-logo  {
-  width :80px;
-  height :90px;
-  
+.navigation-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /*justify-content: space-between;*/
+  margin: 10px;
 }
 
-.img-logo {
-  width: 40px;
-  height: 40px;
+.logo-cont {
+  display:flex;
+  /*align-self: flex-start;*/
+  width: 15%;
 }
 
-
-img-youtube-logo {
-  height: 50px;
-  width:50px;
-} 
-
-.navigation-icon {
-    display: flex;
-    flex-direction: row;  
+.search-cont {
+  display:flex;
+  margin-top: 5px;
+  width: 50%;
 }
 
-.searchbox-size {
-    width: 45%;
-    margin-left: 20px;
+.icons-cont {
+  display:flex;
+  justify-content: space-around;
+  width: 22%;
+  margin-right: 30px;
 }
 
-.searchbox-pad {
-    padding-right: 0px;
+.img-youtube-logo {
+  min-width: 20px;
+  margin-right: 20px;
+  height: 20px;
+  margin-top: 11px;
+  margin-left: 10px;
 }
-
-
-* {
-    box-sizing: border-box;
-  }
-
 
 form.example input[type=text] {
     padding: 10px;
@@ -70,9 +76,8 @@ form.example input[type=text] {
     border-bottom-right-radius: 5px;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
-  
   }
-  
+
   form.example button:hover {
     background: #0b7dda;
   }
@@ -101,48 +106,50 @@ form.example input[type=text] {
       cursor: pointer;
   }
   
-  .container {
+  .mainview-cont {
     display:flex;
-    
+    align-items: flex-start;
   }
   
-  .yt-video-left{
-    flex-grow: 3;
+  .left-section{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 200px;
+    width: 70%;
   }
-  .container .yt-videos-picture {
+
+  hr {
+    width: 100%;
+  }
+
+  .subscribers-section {
+    display: flex;
+
+  }
+
+  .subs-btn-num {
+    display: flex;
+  }
+
+  .avatar-cont {
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .yt-videos-picture {
     display: flex;
     flex-direction: column;
-    margin-right: 10%;
-    
-    /* width : 200px; */
+    width: 10%;
+    align-content: flex-start;
+    margin-right: 250px;
   }
+
+  .toggle-cont {
+    display: flex;
+  }
+
   
 
-  .yt-videos-picture img {
-    margin-bottom: 20px;
-    height: 100px;
-    width : 150px;
-  }
-
-  .container .yt-video-left .container-1 {
-    display : flex;
-  }
-
-  .thumb-up{
-    margin-top: 10px;
-    margin-left: 300px;
-  }
-  .thumb-down{
-    margin-top: 10px;
-    margin-left: 20px;
-  }
-
-  .share{
-    margin-top: 10px;
-    margin-left: 20px;
-  }
 
   

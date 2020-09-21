@@ -4,59 +4,96 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Embedded HTML and CSS Project</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.9/css/all.css">
+        <link rel="stylesheet" href="stylesMILY.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap" rel="stylesheet">   
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <nav class="navigation-icon">
-            <div>
-                <img class="img-logo" src="images/options-icon.png">
-            </div>
-            <div class="img-youtube-logo">
-                <img src="images/logo_youtube.jpg">
-            </div>
-            <div class="searchbox-size">
-                <form class="example" action="action_page.php">
-                    <input type="text" placeholder="Search.." name="search" class="searchbox-pad">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-            
-            <div class="video-icon">
-                <img src="images/video-icon.png">
-            </div>
-            <div class="apps-icom">
-                <img src="images/apps-icon.png">
-            </div>
-            <div class= "bell-icon">
-                <img src="images/bell-icon.png">
-            </div>
-            <div class="user-icon">
-                <img src="images/user-icon.png">
-            </div>
-        </nav>
-        <div class = "container">
-<div class = "yt-video-left">
-    <iframe width="900" height="400" src="https://www.youtube.com/embed/tHAwCpQWofc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3 class= "video-font">The Weeknd - Call Out My Name // Fingerstyle Guitar Cover - Dax Andreas</h3>
-<div class= "container-1">
-    <p>366,106 views•Apr 1, 2018 </p>
-        <i class="material-icons thumb-up">thumb_up</i>
-        <i class="material-icons thumb-down">thumb_down</i>
-        <i class="material-icons share">share</i>
-</div>
-</div>
+        <div class="main-cont">
 
-<div class = "yt-videos-picture">
-    <img src= "https://wallpaper-house.com/data/out/12/wallpaper2you_510460.jpg" alt= "youtube-pic">
-    <img src= "https://wallpaper-house.com/data/out/12/wallpaper2you_510460.jpg" alt= "youtube-pic">
-    <img src= "https://wallpaper-house.com/data/out/12/wallpaper2you_510460.jpg" alt= "youtube-pic">
-    <img src= "https://wallpaper-house.com/data/out/12/wallpaper2you_510460.jpg" alt= "youtube-pic">
-    <img src= "https://wallpaper-house.com/data/out/12/wallpaper2you_510460.jpg" alt= "youtube-pic">
-</div>
-</div>
-        
+            <nav class="navigation-cont">
+                <div class="logo-cont">
+                    <div>
+                        <img class="options-icon" src="images/options-icon.png">
+                    </div>
+                    <div class="img-youtube-logo">
+                        <img src="images/logo-youtube.jpg">
+                    </div>
+                </div>
+                
+                <div class="searchbox-size search-cont">
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="Search.." name="search" class="searchbox-pad">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+    
+                <div class="icons-cont">
+                    <div class="video-icon">
+                        <img src="images/video-icon.png">
+                    </div>
+                    <div class="apps-icom">
+                        <img src="images/apps-icon.png">
+                    </div>
+                    <div class= "bell-icon">
+                        <img src="images/bell-icon.png">
+                    </div>
+                    <div class="user-icon">
+                        <img src="images/user-icon.png">
+                    </div>
+                </div>
+     
+            </nav>
+    
+<!---------------------------MAIN VIEW - Video - Description - videos/right-------->
+            <div class = "mainview-cont">
+
+                <div class = "left-section">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tHAwCpQWofc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class= "video-font">Contributing to Open Source Part I: The Easy Way</h3>
+                
+                    <div class="subscribers-section">
+                        <div class="avatar-cont">
+                            <a href="https://www.youtube.com/watch?v=M_pZReasTvE"><img src="images/t-avatar.png"></a>
+                            <h5><strong><a href="https://www.youtube.com/watch?v=M_pZReasTvE">The Odin Project</a></strong></h5>
+                        </div>
+                        <div class="subs-btn-num">
+                            <button type="submit">Subscribe</button>
+                            <span>799</span>
+                        </div>
+                    </div>
+                
+                    <div class= "right-section">
+                        <p>366,106 views•Apr 1, 2018 </p>
+                        <hr>
+                        <i class="material-icons thumb-up">thumb_up</i>
+                        <i class="material-icons thumb-down">thumb_down</i>
+                        <i class="material-icons share">share</i>
+                    </div>
+                
+                    <article class="video-description">
+                        <h5><strong>Published on Feb 27, 2014</strong></h5>
+                        <p>How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I'll also describe what kinds of contributions open source software projects are typically looking for. As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You can find more information about that project at http://theodinproject.com.</p>
+                    </article>
+                </div>
+
+                <div class = "yt-videos-picture">
+                    <div class="toggle-cont">
+                        <h5>Up next</h5>
+                        <h5>Autoplay</h5>
+                         <span class="material-icons">toggle_on</span>
+                    </div>
+                    <img src= "images/video-pic1.png" alt= "youtube-pic">
+                    <img src= "images/video-pic1.png" alt= "youtube-pic">
+                    <img src= "images/video-pic1.png" alt= "youtube-pic">
+                    <img src= "images/video-pic1.png" alt= "youtube-pic">
+                    <img src= "images/video-pic1.png" alt= "youtube-pic">
+                </div>
+
+            </div>
+    
+        </div>
+
     </body>
 </html>
