@@ -24,7 +24,7 @@
  	
  Tools used: HTML5, and CSS3.
  
- Live Demo link: 
+ Live Demo link: https://ultramax.github.io/HTML-CSS-Project-1/
  
  Requirements: 
  - OS: Windows, Linux, or Mac.
