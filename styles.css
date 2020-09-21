@@ -4,52 +4,54 @@
 
 body {
     margin: 0;
-    font-family: 'Youtube Noto', serif, sans-serif;
+    font-family: Roboto, serif, sans-serif;
+    font-stretch: ultra-condensed;
     font-size: 12px;
-    font-weight: normal;
+    background-color: lightgrey;
+    color: rgb(0, 0, 0);
 }
 
 .main-cont {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  margin: 10px;
+  padding-bottom: 15px;
 }
 
-.navigation-cont {
+.nav-cont {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  /*justify-content: space-between;*/
-  margin: 10px;
+  justify-content: space-between;
+  background-color: white;
 }
 
 .logo-cont {
   display:flex;
-  /*align-self: flex-start;*/
-  width: 15%;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 50px;
 }
 
 .search-cont {
   display:flex;
-  margin-top: 5px;
-  width: 50%;
+  margin-top: 12px;
+  margin-right: 20px;
+  padding: 0;
 }
 
 .icons-cont {
   display:flex;
-  justify-content: space-around;
-  width: 22%;
-  margin-right: 30px;
+  justify-content: space-evenly;
+  width: 15%;
+  margin-top: 5px;
+  margin-right: 100px;
 }
 
-.img-youtube-logo {
-  min-width: 20px;
-  margin-right: 20px;
-  height: 20px;
-  margin-top: 11px;
-  margin-left: 10px;
+.yt-logo {
+  width: auto;
+  height: auto;
+  max-height: 120px;
+  max-width: 120px;
+  margin-top: 7px;
+  margin-left: 40px;
 }
 
 form.example input[type=text] {
@@ -61,7 +63,6 @@ form.example input[type=text] {
     float: left;
     width: 80%;
     background: #f1f1f1;
-    
   }
 
   form.example button {
@@ -138,7 +139,7 @@ form.example input[type=text] {
   }
 
   /* -------- Right side, suggested videos -------- */
-  
+
   .suggestedVids-section {
     display: flex;
     flex-direction: column;
