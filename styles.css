@@ -299,48 +299,6 @@ form.search-btn input {
     margin-bottom: 30px;
   }
   
-  .video-icon, .apps-icon, .user-icon, .bell-icon, .yt-logo, button, .share, .suggest-videos-1, .suggest-videos {
+  .video-icon, .apps-icon, .user-icon, .bell-icon, .options-icon, .yt-logo, button, .share, .suggest-videos-1, .suggest-videos {
     cursor: pointer;
 }
-
-  
-
-
-  .profile-img {
-height:40px;
-  }
-  .subscribe-btn {
-    background-color: red;
-    opacity: 0.9;
-    border-radius: 5px;
-  }
-
-  
-  .subscribe {
-    display: inline-flex;
-  }
-
-  .viewer {
-    margin-left: 650px;
-  }
-  .paragraph {
-    flex-wrap: wrap;
-    width:900px
-  }
-
-  .img-class {
-    width: 150px;
-    height: 120px;
-  }
-
-  .side-pic {
-    display:flex;
-  }
-
-   .para {
-    margin-left: 10px;
-  }
-  .side-row {
-    display: flex;
-    flex-direction: column;
-  }
